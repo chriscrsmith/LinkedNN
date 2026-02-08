@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "linkedNN"
+packages = [
+    {include = "linkedNN"}
+]
+version = "0.1.0"
+description = "Neural network for capturing linkage disequilibrium related features"
+authors = ["chriscrsmith <chriscs@iu.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+matplotlib = ">=3,<4"
+msprime = ">=1,<2"
+numpy = ">=1,<2"
+python = ">=3.8,<3.12"
+torch = ">=1,<2"
+tskit = ">=0,<1"
+utm = ">=0,<1"
+scikit-learn = ">=1,<2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+linkedNN = 'linkedNN.linkedNN:run'
