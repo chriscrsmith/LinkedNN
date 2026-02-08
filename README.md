@@ -119,7 +119,7 @@ For this vignette, we will run one hundred small simulations using a script prov
 However, note that 50,000 simulations and hundreds of training epochs may be required to train successfully.
 
 ```
-git clone github.com/the-smith-lab/LinkedNN
+git clone https://github.com/the-smith-lab/LinkedNN.git
 for i in {1..100}
 do
     echo "simulation ID $i"
