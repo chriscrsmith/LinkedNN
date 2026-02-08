@@ -154,4 +154,4 @@ linkedNN --predict --wd tempdir/ --seed 2 --batch_size 10
 **How to cite:**
 
 
-**Source code:** [github.com/the-smith-lab/LinkedNN](github.com/the-smith-lab/LinkedNN)
+**Source code:** github.com/the-smith-lab/LinkedNN
