@@ -20,7 +20,8 @@ pip install linkedNN
 To test the installation you can apply the pretrained model from the paper to predict from a simulated dataset:
 
 ```
-linkedNN --wd Example_data/ --seed 1 --predict
+git clone https://github.com/the-smith-lab/LinkedNN.git
+linkedNN --wd LinkedNN/Example_data/ --seed 1 --predict
 ```
 
 The LD layer by itself can be accessed using:
@@ -119,7 +120,7 @@ For this vignette, we will run one hundred small simulations using a script prov
 However, note that 50,000 simulations and hundreds of training epochs may be required to train successfully.
 
 ```
-git clone github.com/the-smith-lab/LinkedNN
+git clone https://github.com/the-smith-lab/LinkedNN.git
 for i in {1..100}
 do
     echo "simulation ID $i"
@@ -154,4 +155,4 @@ linkedNN --predict --wd tempdir/ --seed 2 --batch_size 10
 **How to cite:**
 
 
-**Source code:** [github.com/the-smith-lab/LinkedNN](github.com/the-smith-lab/LinkedNN)
+**Source code:** github.com/the-smith-lab/LinkedNN
