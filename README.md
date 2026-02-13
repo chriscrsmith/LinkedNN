@@ -20,7 +20,7 @@ pip install linkedNN
 
 To test the installation you can apply the pretrained model from the paper to predict from a simulated dataset:
 
-```bash
+```console
 $ git clone https://github.com/the-smith-lab/LinkedNN.git
 $ linkedNN --wd LinkedNN/Example_data/ --seed 1 --predict
 using saved model from epoch 438
