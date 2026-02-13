@@ -13,15 +13,21 @@ Neural network for extracting LD features from SNPs
 
 <h2 id="installation">Installation</h2>
 
+#### Quick start
 ```
 pip install linkedNN
 ```
 
 To test the installation you can apply the pretrained model from the paper to predict from a simulated dataset:
 
-```
-git clone https://github.com/the-smith-lab/LinkedNN.git
-linkedNN --wd LinkedNN/Example_data/ --seed 1 --predict
+```console
+$ git clone https://github.com/the-smith-lab/LinkedNN.git
+$ linkedNN --wd LinkedNN/Example_data/ --seed 1 --predict
+using saved model from epoch 438
+	test indices 0 to 0 out of 1
+target 0 MRAE (no-logged): 0.136
+target 1 MRAE (no-logged): 0.259
+target 2 MRAE (no-logged): 0.289
 ```
 
 The LD layer by itself can be accessed using:
@@ -35,6 +41,15 @@ GPU compatibility: The code should work out of the box on a CPU, but to train on
 ```
 mamba install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
+
+#### GSL installation
+There may be additional requirements depending on the specific platform.
+In particular, installation of GNU Scientific Library (GSL) is sometimes needed for running simulations with `msprime`.
+See the `msprime` documentation---https://tskit.dev/msprime/docs/stable/installation.html---for up-to-date instructions.
+
+
+
+
 
 
 
@@ -108,6 +123,10 @@ linkedNN --predict \
 
 
 
+
+
+
+
 ---
 <h2 id="vignette">Vignette</h2>
 
@@ -147,6 +166,8 @@ The new `max_epochs` flag is used here to limit the number of training epochs (d
 linkedNN --predict --wd tempdir/ --seed 2 --batch_size 10
 ```
 ---
+
+
 
 
 
