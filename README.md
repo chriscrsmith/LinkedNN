@@ -173,7 +173,6 @@ linkedNN --predict --wd tempdir/ --seed 2 --batch_size 10
 
 
 
-**How to cite:**
-
+**How to cite:** Smith CC. LinkedNN: a neural model of linkage disequilibrium decay for recent effective population size inference. arXiv. 2026. 10.48550/arXiv.2602.13121.
 
 **Source code:** github.com/the-smith-lab/LinkedNN
